@@ -15,8 +15,7 @@ SECRET_KEY = 'django-insecure-o5^8l=)fh)la8p#azru&7!r@@#&o=lr)c@&e1_16aly2*22(s4
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-# ✅ Corrected Allowed Hosts
-ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+
 
 # Application definition
 INSTALLED_APPS = [
@@ -106,10 +105,7 @@ STATIC_URL = 'static/'
 # Default primary key field type
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# ✅ CORS Configuration
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173",  # React frontend
-]
+ALLOWED_HOSTS = ['*']
 
 CORS_ALLOW_CREDENTIALS = True  # ✅ If using cookies or JWT
 # CORS_ALLOW_ALL_ORIGINS = True  # ⚠️ Uncomment only for quick local testing
