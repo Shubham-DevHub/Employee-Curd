@@ -12,4 +12,4 @@ psycopg2-binary==2.9.11
 whitenoise==6.11.0
 
 # Optional (uncomment if deploying to MySQL):
-# mysqlclient==2.2.7
+mysqlclient==2.2.7
